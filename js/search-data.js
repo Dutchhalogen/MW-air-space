@@ -14,13 +14,13 @@ const searchIndex = [
               Die wichtigsten Stealth Arten werden hier erklärt.`
   },
   {
-    title: "Visual Stealth",
+    title: "Stealth – Visual Stealth",
     url: "stealth.html#visual",
     content: `Visual Stealth ist die älteste Art von Stealth Technik, welche man umgangssprachlich auch einfach "Tarnung" nennen kann. Ihr Ziel ist es, im sichtbaren Lichtspektrum unentdeckt zu bleiben. Dies erreicht man, indem man sich optisch so sehr wie möglich an die Umgebung anpasst. Visual Stealth wird heute in fast allen militärischen Einheiten verwendet: Von Infanterie bis zum Panzer.
               Als «Active Visual Stealth», wird hingegen eine Technologie bezeichnet, welche aktiv die Umgebung nachzuahmen versucht oder sogar den Eindruck von Transparenz erwecken will. Diese Technologie ist schon lange in Entwicklung, jedoch sehr komplex und deshalb noch nicht stark verbreitet.`
   },
   {
-    title: "Radar Stealth",
+    title: "Stealth – Radar Stealth",
     url: "stealth.html#radar",
     content: `"Radar Stealth” ist die Technologie, die meistens gemeint ist, wenn von “Stealth” gesprochen wird. Die Idee dahinter ist, für Radar, also «Radio Detection and Ranging» unentdeckt zu bleiben.  Radare senden elektromagnetische Wellen aus, welche dann von einem Objekt zurückgeworfen und von einer Antenne erkannt werden. Das Ziel besteht darin, keine elektromagnetische Wellen zurückzuwerfen und so unsichtbar zu bleiben.
               Radar Stealth ist bei Flugzeugen und Schiffen am weitesten verbreitet, jedoch liegt hier der Fokus auf Flugzeugen (wobei die meisten Stealth Flugzeuge nur gegen «High Frequency Radar» getarnt, jedoch nicht gegen «Low Frequency Radar» getarnt sind).
@@ -33,7 +33,7 @@ const searchIndex = [
               So ist die «RCS» (Radar cross section, Quantifizierung von Stealth in m2, je kleiner desto besser) des Eurofighter Typhoons (nur RAM keine Geometrie) bei geschätzten 0.5 - 1.0 m2 Clean (ohne Waffen). Im Vergleich: Die SU-T50 (nur Geometrie, kein RAM) hat eine geschätzte RCS von 0.1 - 0.25 m2 Loaded (mit Waffen). Beide sind jedoch nicht annähernd so stealthy wie Flugzeuge mit beiden Eigenschaften wie die F-35 (0.0035 - 0.0005 m2) oder die F22 (0.0001 - 0.0002 m2). Die besten Stealth Eigenschaften besitzen jedoch «Flying Wing» Bomber, da diese auch gegen Low-Frequency Radar stealthy sind, wie zum Beispiel die B-2 (0.000025 - 0.0001 m2).`
   },
   {
-    title: "Infrared Stealth",
+    title: "Stealth – Infrared Stealth",
     url: "stealth.html#infrared",
     content: `„Infrared Stealth“ wird oft gemeinsam mit „Radar Stealth“ eingesetzt und wurde ungefähr zur gleichen Zeit erfunden. Die Funktionsweise ist jedoch sehr viel simpler als bei Radar Stealth: Ein Objekt soll möglichst wenig Wärme abstrahlen.
               Infrarot Stealth ist sehr verbreitet und wird bei Flugzeugen, Schiffen und Landfahrzeugen eingesetzt. Der Fokus liegt hier ebenfalls auf Flugzeugen. Momentan gibt es bei Flugzeugen hauptsächlich eine Form von Infrarot Stealth, nämlich die Reduktion der Triebwerkswärme. Da das Triebwerk mit Abstand der heisseste Teil eines Flugzeugs ist, ist das auch nicht überraschend.
@@ -41,12 +41,12 @@ const searchIndex = [
               Es gibt jedoch noch eine weitere, experimentelle Form von Infrarot Stealth. Dabei wird das gesamte Flugzeug mit einer reflektierenden Beschichtung ausgestattet, die Infrarotstrahlung reflektiert und zerstreut. Dadurch können Infrarot-Algorithmen verwirrt werden. Während Radar sehr einfach zu lesendes Signal liefert, benötigen IR-Daten komplexe Algorithmen, die nachweislich Mühe mit reflektierenden Oberflächen haben.`
   },
   {
-    title: "Sonar Stealth",
+    title: "Stealth – Sonar Stealth",
     url: "stealth.html#sonar",
     content: `Sonar Stealth dient dazu, Unterwasserfahrzeuge vor Sonar zu verstecken, also vor Sound Navigation and Ranging. Dies funktioniert einerseits, indem das Fahrzeug selbst möglichst wenig Geräusche produziert, und andererseits, indem es aktive Sonar-Pings nur schwach reflektiert. Die einzige momentane Strategie hierzu sind Gummiplatten an der Aussenhülle. Diese Art von Stealth wird nur bei U-Booten und teilweise bei Schiffen eingesetzt.`
   },
   {
-    title: "Weitere Arten",
+    title: "Stealth – Weitere Arten",
     url: "stealth.html#more",
     content: `Es gibt noch weniger verbreitete oder nicht klar definierte Stealth-Arten, zum Beispiel Sound Stealth (nicht verwechseln mit Sonar Stealth), bei der die Geräuschsignatur ausserhalb des Wassers minimiert wird, oder UV Stealth, einer Unterart von IR Stealth. Auf diese wird hier jedoch nicht weiter eingegangen. `
   },
@@ -109,7 +109,53 @@ const searchIndex = [
     title: "Fighter Generations – 6th Generation",
     url: "fighter_generations.html#gen6",
     content: `Die sechste Generation umfasst zukünftige Kampfflugzeuge, die voraussichtlich ab 2030 bis 2035 in Dienst gestellt werden. Da sich noch kein Flugzeug dieser Generation im aktiven Einsatz befindet, sind die Merkmale nicht eindeutig definiert. Erwartete Fähigkeiten sind verbesserte Stealth-Eigenschaften aus allen Blickwinkeln, weiterentwickelte Sensor Fusion, die Zusammenarbeit mit KI-gesteuerten Drohnen sowie neue Technologien wie variable Cycle Engines und Directed Energy Weapons. Viele dieser Eigenschaften befinden sich noch in der Konzept- oder Entwicklungsphase.`
-  }
+  },
+  {
+  title: "Killchain – Einführung",
+  url: "killchain.html#intro",
+  content: `Die "Killchain" ist ein Konzept, das von praktisch allen Luftwaffen weltweit verwendet wird. Es beschreibt den Prozess zwischen dem ersten Moment, in dem ein Ziel auf dem Bildschirm erscheint, bis zu dem Moment, an dem die Analyse eines erfolgreichen oder erfolglosen Abschusses fertiggestellt ist. Verschiedene Luftwaffen verwenden verschiedene Varianten der Killchain, wir konzentrieren uns hier jedoch auf die NATO Standard-Variante, das sogenannte F2T2EA System. F2T2EA steht für Find / Fix / Track / Target / Engage / Assess. Ein weiteres Konzept ist das sogenannte "Killnet". Dieser Begriff wird vom US-Militär benutzt und soll mehrere Killchains zu einem Netz zusammenfügen, Schwächen der Chain zu beheben und mehr Nutzen aus Sensor Fusion zu ziehen. Als erstes ist es wichtig zu verstehen, wie genau F2T2EA funktioniert, denn erst dann kann man Vor- und Nachteile verstehen und es mit anderen Killchains und dem Killnet vergleichen.`
+},
+{
+  title: "Killchain – Find",
+  url: "killchain.html#find",
+  content: `Das "Find" in der Killchain beschreibt der Moment, wo das das Ziel zum ersten Mal wahrgenommen wird. Hierbei kann jegliche Methode verwendet werden, von Satelliten über Radar bis zu Fotos. Alles, womit die Existenz eines Ziels zum ersten Mal bewiesen werden kann, gilt als "Find". Es sollte jedoch klar sein, dass das Find allein noch praktisch keinen Nutzen hat, da jegliche Informationen zum Ziel fehlen. Es ist zwar konzeptuell der Wichtigste Schritt, für sich allein jedoch nicht nutzbar.`
+},
+{
+  title: "Killchain – Fix",
+  url: "killchain.html#fix",
+  content: `Das "Fix" ergänzt nun das "Find". Bei diesem Schritt werden relevante Informationen zum Ziel gesammelt, z.B. Position, Verhalten und Typ des Ziels. Diese Informationen basieren jedoch noch nicht zwingend auf Echtzeit, sondern können auch vergangenes Verhalten des Ziels beschreiben. Im spezifischen Fall von Flugzeugen sind die meisten "Fix"-Daten in Echtzeit, da Flugzeuge sich sehr schnell bewegen, weshalb alte Information praktisch nutzlos ist. Man geht deshalb meist direkt zum nächsten Schritt über. Es ist anzumerken, dass besonders bei diesem Schritt Stealth Technologie sehr nützlich ist, da man ein Stealth Flugzeug zwar finden kann, das Fixen jedoch sehr schwierig ist.`
+},
+{
+  title: "Killchain – Track",
+  url: "killchain.html#track",
+  content: `"Track" ist der erste aktive Schritt zum Ziel. Eigentlich ist er fast identisch zu "Fix", jedoch müssen die Daten nun zwingend in Echtzeit sein. Deshalb sind nun auch die Methoden, die ein "Track" produzieren können, stark eingeschränkt. Methoden wie Fotos, Videos und Satelliten entfallen und es bleiben nur Methoden wie Echtzeit-Kameras, Radar, IRST etc. Auch hier sind Gegenmassnahmen wie Stealth und elektronische Kriegsführung sehr effektiv. In den meisten Fällen ist “Track” auch der letzte Schritt, der absolviert wird, bevor das Ziel selbst merkt, dass es in eine Killchain geraten ist.`
+},
+{
+  title: "Killchain – Engage",
+  url: "killchain.html#engage",
+  content: `"Engage" ist bei weitem der spannendste und auch aktivste Schritt in der Killchain. Als erstes wird entschieden, ob der Kill tatsächlich stattfinden soll. Dieser Entscheid ist gewissermassen der "Point of no return". Danach wird die Waffe zum ausführen des Kills abgefeuert. Nun sind also nicht mehr nur Sensoren im Spiel, denn die "Kugel" ist jetzt in der Luft. Der Gegner wird muss jetzt sehr aktiv werden und versuchen, mit verschiedensten Methoden dem Geschoss zu entkommen. Stealth, EW und vieles mehr wird jetzt wieder viel nützlicher als zuvor. Die Wahrscheinlichkeit, eine abgefeuertes Geschoss zu überleben, ist relativ hoch. Man muss aber beachten, dass nach einem erfolgreichen "Track"-Schritt der "Engage"-Schritt beliebig oft ausgeführt werden kann, um das Ziel zu eliminieren, vorausgesetzt, es steht noch Munition zur Verfügung. Während in den vorherigen Phasen ein Entkommen zwar schwer war, ein einziges Entkommen dafür reichte, gestaltet sich nun das Entkommen leichter, muss jedoch unter hohem Stress und einer sich verschlechternden Situation mehrmals geschehen, was die tatsächliche Schwierigkeit extrem erhöht. Am Ende des "Engagements" wird das Ziel entweder erfolgreich neutralisiert oder entkommen endgültig.`
+},
+{
+  title: "Killchain – Assess",
+  url: "killchain.html#assess",
+  content: `Der letzte Schritt ist besonders, denn "Assess" wird immer dann angehängt, wenn die Killchain endet. Im Fall einer erfolgreichen Killchain geschieht dies nach dem "Engage"- Schritt, bei einer erfolglosen Killchain jedoch nach dem letzten begonnenen, aber nicht erfolgreich abgeschlossenen Schritt, unabhängig davon, welcher das war. Beim "Assessment" wird analysiert, warum die Killchain erfolgreich oder erfolglos war, und welche Erkenntnisse und Verbesserungen man daraus ableiten kann. Im Fall einer erfolgreichen Chain wird das Wrack des Flugzeuges gesichtet und analysiert. War die Killchain erfolglos, wird ermittelt, weshalb und wohin das Flugzeug entkommen ist. Hierbei sind erneut alle Sensoren von Nutzen, einschliesslich Satellitenbilder, Videos und physische Wrackteile.`
+},
+{
+  title: "Killchain – Vorteile",
+  url: "killchain.html#vorteile",
+  content: `Ein wesentlicher Vorteil der Killchain gegenüber dem Konzept, dass alle Beteiligten auf sämtliche Ziele schiessen, besteht in der deutlich verbesserten Struktur, die das Risiko von Friendly Fire und Misskommunikation verringert. Ausserdem lässt sich diese Taktik einfacher standardisieren und verbessern.`
+},
+{
+  title: "Killchain – Nachteile",
+  url: "killchain.html#nachteil",
+  content: `Der nahezu einzige Nachteil liegt darin, dass jede Kette nur so stark ist wie ihr schwächstes Glied. Kann ein Schritt nicht durchgeführt werden, zerbricht die Killchain. Ausserdem könnten die klar definierten Abläufe in Stresssituationen zur Herausforderung werden oder wertvolle Sekunden kosten. Insgesamt deutet die weltweite Verbreitung der Killchain jedoch darauf hin, dass die Vorteile die Nachteile überwiegen und es sich um ein erfolgreiches System handelt. Schwachstellen liegen also vermutlich eher in der praktischen Umsetzung des Systems als im theoretischen Konzept.`
+},
+{
+  title: "Killchain – Killnet",
+  url: "killchain.html#killnet",
+  content: `Ein "Killnet" versucht nun das Problem des "schwächsten Glieds" zu lösen, indem es das Konzept der Killchain, bei dem ein einzelnes oder einige wenige Flugzeuge die ganze Chain ausführen, auflöst. Stattdessen wird ein Netzwerk aus vielen Flugzeugen gebildet, die untereinander kommunizieren. So können sich Flugzeuge auf einzelne Abschnitte der Chain konzentrieren und die Informationen einem anderen Flugzeug übergeben, das dann seinerseits den nächsten Schritt ausführt. Falls nun ein "Glied" ausfällt, können die übrigen versuchen, das Loch im Netz zu füllen und für das ausgefallene Flugzeug einzuspringen. In der Theorie klingt dieses System zwar fast perfekt, jedoch ist die Ausführung hoch komplex. Während bei nur einem Flugzeug lediglich einzelne Schritte scheitern können, kann bei einem Netz von mehreren Flugzeugen zusätzlich noch der komplexe Austausch von Daten zwischen den Schritten fehlschlagen oder zu lange dauern. Obwohl das System also einige existierende Schwachstellen reduziert, integriert es zugleich viele neue.`
+}
+
 
 ];
 
