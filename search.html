@@ -6,23 +6,30 @@
   <title>Suchergebnisse</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    mark { background-color: yellow; }
+    html { scroll-behavior: smooth; }
+    mark { background-color: yellow; } /* Hervorhebung */
   </style>
 </head>
 <body class="container mt-5">
 
   <h1>Suchergebnisse</h1>
 
-  <div id="search-results" class="mt-4"></div>
+  <!-- HIER WERDEN DIE TREFFER ANGEZEIGT -->
+  <div id="search-results" class="list-group mt-4"></div>
 
+  <!-- JS-Dateien einbinden -->
   <script src="js/search-data.js"></script>
   <script src="js/search.js"></script>
 
   <script>
-    // Liest Suchbegriff aus URL
+    // Suchbegriff aus URL auslesen
     const params = new URLSearchParams(window.location.search);
     const query = params.get("q");
-    if (query) searchSite(query);
+    if (query) {
+      searchSite(query);
+    } else {
+      document.getElementById("search-results").innerHTML = "<p>Bitte Suchbegriff eingeben.</p>";
+    }
   </script>
 
 </body>
