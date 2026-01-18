@@ -24,13 +24,13 @@
         <div class="collapse navbar-collapse show" id="navbarLight">
           <ul class="navbar-nav me-auto mb-2 mb-xl-0">
             <li class="nav-item">
-              <a class="nav-link active fs-4" aria-current="page" href="index.html">
+              <a class="nav-link text-dark active fs-4" aria-current="page" href="index.html">
                 Home
               </a>
             </li>
             
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle fs-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+              <a class="nav-link dropdown-toggle text-dark fs-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
                 Stealth 
               </a>
                 <ul class="dropdown-menu">
@@ -39,11 +39,29 @@
                   <li><a class="dropdown-item fs-5" href="stealth.html#radar">Radar Stealth</a></li>
                   <li><a class="dropdown-item fs-5" href="stealth.html#infrared">Infrared Stealth</a></li>
                   <li><a class="dropdown-item fs-5" href="stealth.html#sonar">Sonar Stealth</a></li>
+                  <li><a class="dropdown-item fs-5" href="stealth.html#more">Weitere Arten</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark fs-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                Killchain 
+              </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item fs-5" href="killchain.html#intro">Einführung</a></li>
+                  <li><a class="dropdown-item fs-5" href="killchain.html#find">Find</a></li>
+                  <li><a class="dropdown-item fs-5" href="killchain.html#fix">Fix</a></li>
+                  <li><a class="dropdown-item fs-5" href="killchain.html#track">Track</a></li>
+                  <li><a class="dropdown-item fs-5" href="killchain.html#engage">Engage</a></li>
+                  <li><a class="dropdown-item fs-5" href="killchain.html#assess">Assess</a></li>
+                  <li><a class="dropdown-item fs-5" href="killchain.html#vorteile">Vorteile</a></li>
+                  <li><a class="dropdown-item fs-5" href="killchain.html#nachteil">Nachteile</a></li>
+                  <li><a class="dropdown-item fs-5" href="killchain.html#killnet">Killnet</a></li>
                 </ul>
             </li>
             
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle fs-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+              <a class="nav-link dropdown-toggle text-dark fs-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
                 Fighter GENs 
               </a>
                 <ul class="dropdown-menu">
@@ -57,17 +75,34 @@
                   <li><a class="dropdown-item fs-5" href="fighter_generations.html#gen6">6th Generation</a></li>
                 </ul>
             </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark fs-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                UAV & UCAV 
+              </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item fs-5" href="uav_ucav.html#intro">Einführung</a></li>
+                  <li><a class="dropdown-item fs-5" href="uav_ucav.html#lm">Kamikaze Drohnen</a></li>
+                  <li><a class="dropdown-item fs-5" href="uav_ucav.html#uca">UCAs</a></li>
+                  <li><a class="dropdown-item fs-5" href="uav_ucav.html#attack">Attack Drones</a></li>
+                  <li><a class="dropdown-item fs-5" href="uav_ucav.html#recon">Reconnaissance Drones</a></li>
+                  <li><a class="dropdown-item fs-5" href="uav_ucav.html#ew">Electronic Warfare</a></li>
+                  <li><a class="dropdown-item fs-5" href="uav_ucav.html#lw">Loyal Wingman Drones</a></li>
+                  <li><a class="dropdown-item fs-5" href="uav_ucav.html#ki">Autonome Drohnen</a></li>
+                </ul>
+            </li>
             
             <li class="nav-item">
-              <a class="nav-link fs-4" href="sensor_fusion.html">
+              <a class="nav-link text-dark fs-4" href="sensor_fusion.html">
                 Sensor Fusion
               </a>
             </li>
 
           </ul>
-          <form class="d-flex" action="search.html" method="get">
-            <input class="form-control me-2" type="search" name="q" placeholder="Search">
-            <button class="btn btn-outline-primary" type="submit">
+          <form class="d-flex gap-2" action="search.html" method="get">
+            <input class="form-control fs-4 py-2 px-2" type="search" name="q" placeholder="Search">          
+            <button
+              class="btn btn-outline-primary fs-4 py-2 px-4" type="submit">
               Search
             </button>
           </form>
