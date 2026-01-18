@@ -33,10 +33,12 @@ function searchSite(query) {
 
       // Treffer in Ergebnisliste einfügen
       resultsContainer.innerHTML += `
-        <div class="list-group-item mb-2">
-          <h5>${item.title}</h5>
-          <p>${snippet}</p>
-          <a href="${item.url}" class="btn btn-sm btn-primary">Zum Treffer</a>
+        <div class="list-group-item mb-3 p-3 shadow-sm rounded d-flex flex-column flex-md-row justify-content-between align-items-start">
+          <div class="me-3">
+            <h5>Title</h5>
+            <p>Snippet...</p>
+          </div>
+          <a href="#" class="btn btn-outline-primary btn-sm mt-2 mt-md-0">Zum Treffer</a>
         </div>
       `;
 
