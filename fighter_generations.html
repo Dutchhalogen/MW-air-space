@@ -13,56 +13,63 @@
   </head>
     
   <body>
-    <nav class="navbar navbar-expand-xl navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar fixed-top navbar-expand-xl navbar-light" style="background-color: #e3f2fd;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand fs-3" href="#">
+          Navbar
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLight" aria-controls="navbarLight" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse show" id="navbarLight">
           <ul class="navbar-nav me-auto mb-2 mb-xl-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">
+              <a class="nav-link active fs-4" aria-current="page" href="index.html">
                 Home
               </a>
             </li>
+            
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+              <a class="nav-link dropdown-toggle fs-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
                 Stealth 
               </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="stealth.html#intro">Einführung</a></li>
-                  <li><a class="dropdown-item" href="stealth.html#visual">Visual Stealth</a></li>
-                  <li><a class="dropdown-item" href="stealth.html#radar">Radar Stealth</a></li>
-                  <li><a class="dropdown-item" href="stealth.html#infrared">Infrared Stealth</a></li>
-                  <li><a class="dropdown-item" href="stealth.html#sonar">Sonar Stealth</a></li>
+                  <li><a class="dropdown-item fs-5" href="stealth.html#intro">Einführung</a></li>
+                  <li><a class="dropdown-item fs-5" href="stealth.html#visual">Visual Stealth</a></li>
+                  <li><a class="dropdown-item fs-5" href="stealth.html#radar">Radar Stealth</a></li>
+                  <li><a class="dropdown-item fs-5" href="stealth.html#infrared">Infrared Stealth</a></li>
+                  <li><a class="dropdown-item fs-5" href="stealth.html#sonar">Sonar Stealth</a></li>
                 </ul>
             </li>
+            
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+              <a class="nav-link dropdown-toggle fs-4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
                 Fighter GENs 
               </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="fighter_generations.html#intro">Einführung</a></li>
-                  <li><a class="dropdown-item" href="fighter_generations.html#gen1">1st Generation</a></li>
-                  <li><a class="dropdown-item" href="fighter_generations.html#gen2">2nd Generation</a></li>
-                  <li><a class="dropdown-item" href="fighter_generations.html#gen3">3rd Generationh</a></li>
-                  <li><a class="dropdown-item" href="fighter_generations.html#gen4">4th Generation</a></li>
-                  <li><a class="dropdown-item" href="fighter_generations.html#gen4.5">4.5th Generation</a></li>
-                  <li><a class="dropdown-item" href="fighter_generations.html#gen5">5th Generation</a></li>
-                  <li><a class="dropdown-item" href="fighter_generations.html#gen6">6th Generation</a></li>
+                  <li><a class="dropdown-item fs-5" href="fighter_generations.html#intro">Einführung</a></li>
+                  <li><a class="dropdown-item fs-5" href="fighter_generations.html#gen1">1st Generation</a></li>
+                  <li><a class="dropdown-item fs-5" href="fighter_generations.html#gen2">2nd Generation</a></li>
+                  <li><a class="dropdown-item fs-5" href="fighter_generations.html#gen3">3rd Generationh</a></li>
+                  <li><a class="dropdown-item fs-5" href="fighter_generations.html#gen4">4th Generation</a></li>
+                  <li><a class="dropdown-item fs-5" href="fighter_generations.html#gen4.5">4.5th Generation</a></li>
+                  <li><a class="dropdown-item fs-5" href="fighter_generations.html#gen5">5th Generation</a></li>
+                  <li><a class="dropdown-item fs-5" href="fighter_generations.html#gen6">6th Generation</a></li>
                 </ul>
             </li>
+            
             <li class="nav-item">
-              <a class="nav-link" href="sensor_fusion.html">
+              <a class="nav-link fs-4" href="sensor_fusion.html">
                 Sensor Fusion
               </a>
             </li>
 
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-primary" type="submit">Search</button>
+          <form class="d-flex" action="search.html" method="get">
+            <input class="form-control me-2" type="search" name="q" placeholder="Search">
+            <button class="btn btn-outline-primary" type="submit">
+              Search
+            </button>
           </form>
         </div>
       </div>
