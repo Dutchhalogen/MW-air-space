@@ -34,7 +34,7 @@ function searchSite(query) {
             <h5>${item.title}</h5>
             <p>${snippet}</p>
           </div>
-          <a href="${item.url}" class="btn btn-primary btn-sm mt-2 mt-md-0">Zum Treffer</a>
+          <a href="${item.url}" class="btn btn-secondary btn-lg mt-2 mt">Zum Treffer</a>
         </div>
       `;
 
