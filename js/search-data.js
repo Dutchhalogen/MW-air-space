@@ -160,3 +160,45 @@ const searchIndex = [
 ];
 
 
+searchData.push({
+  title: "UAV & UCAV",
+  url: "uav_ucav.html",
+  sections: [
+    {
+      id: "intro",
+      text: `Drohnen nehmen in der modernen Kriegsführung eine sehr bedeutende Rolle ein und werden in naher Zukunft einen Schwerpunkt für vieler Länder bilden. Allerdings gibt es sehr viele verschiedene Typen von Drohnen mit sehr unterschiedlichen Aufgaben und Designs. Grundsätzlich lassen sich Drohnen in zwei Hauptkategorien unterteilen: UAVs und UCAVs. UAV steht für «Unmanned Aerial Vehicle», während UCAV für «Unmanned Combat Aerial Vehicle» steht.`
+    },
+    {
+      id: "dif",
+      text: `Der grosse Unterschied ist, dass UAVs meist auf zivilen Konstruktionen basieren und somit auch aus zivilen Teilen mit ziviler Countermeasure Resistance bestehen, wodurch sie nur begrenzt nutzbar sind. UCAVs sind hingegen von Grund auf für das Militär konzipiert. Sie sind deshalb auch resistenter gegenüber Angriffen und haben wesentlich höhere Trefferwahrscheinlichkeiten. Innerhalb der UCAVs gibt es eine zweite, wichtige Unterteilung, in sogenannte Loitering Munitions (Kamikaze-Drohnen) sowie Unmanned Combat Aircrafts (UCAs), welche als wiederverwendbare UCAVs gelten.`
+    },
+    {
+      id: "lm",
+      text: `Loitering Munitions sind Drohnen, welche nicht nur das Liefersystem einer Waffe darstellen, sondern auch die Waffe selbst. Sie fliegen direkt ins Ziel hinein und explodieren. Die Grenze zu Marschflugkörpern ist deshalb sehr unscharf. LMs meist günstiger und leichter als Marschflugkörper, werden oft aus kleinerer Distanz gestartet und kreisen dann sehr lange Zeit passiv über dem Zielgebiet.`
+    },
+    {
+      id: "uca",
+      text: `UCAs sind die wesentlich spannendere Gruppe der UCAVs. Diese Drohnen können mehrfach genutzt werden und werden nach Gewicht, Grösse und Einsatzgebiet unterteilt. Die wichtigsten Gruppen sind Attack Drones, Reconnaissance Drones, EW Drones und Loyal Wingman Drones.`
+    },
+    {
+      id: "attack",
+      text: `Attack Drones sind Drohnen, die für Close Air Support und Interdiction Strikes genutzt werden. Dabei fliegt die bewaffnete Drohne zum Zielgebiet und feuert ihre Waffen auf zugewiesene Ziele ab. Beispiele: MQ-1 Predator, MQ-9 Reaper, Wing Loong II, Hermes-Serie.`
+    },
+    {
+      id: "recon",
+      text: `Reconnaissance Drones sind Spionage- und Aufklärungsplattformen. Sie sammeln Informationen über feindliche Einrichtungen und Bewegungen. Vorteil gegenüber bemannten Systemen: geringere Gefahr für Menschenleben, lange Flugzeiten (über 30 Stunden), ISR-Drohnen wie RQ-4, RQ-7, RQ-170.`
+    },
+    {
+      id: "ew",
+      text: `Electronic Warfare Drohnen gewährleisten elektronische Kriegsführung. Sie stören gegnerische Kommunikation und Radar, verhindern Aufmerksamkeit auf bemannte Flugzeuge. Speziell dafür gebaute EW-Drohnen sind selten, viele Mehrzweckdrohnen können diese Mission zusätzlich ausführen.`
+    },
+    {
+      id: "lw",
+      text: `Loyal Wingman Drones unterstützen bemannte Kampfjets im Einsatz. Sie führen Befehle aus und kehren zurück, teilweise gesteuert durch KI. Beispiele: russische S-70, amerikanische YFQ-42 und YFQ-44.`
+    },
+    {
+      id: "ki",
+      text: `Autonome Drohnen werden vollständig von KI gesteuert. Beispiele: X-62 Vista (F-16D Modifikation). Sie führen Flugmanöver selbstständig aus und können Luftkämpfe simulieren. Der Einsatz im echten Kampf ist bisher selten.`
+    }
+  ]
+});
