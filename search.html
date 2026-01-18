@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suchergebnisse</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    mark { background-color: yellow; }
+  </style>
+</head>
+<body class="container mt-5">
+
+  <h1>Suchergebnisse</h1>
+
+  <div id="search-results" class="mt-4"></div>
+
+  <script src="js/search-data.js"></script>
+  <script src="js/search.js"></script>
+
+  <script>
+    // Liest Suchbegriff aus URL
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get("q");
+    if (query) searchSite(query);
+  </script>
+
+</body>
+</html>
