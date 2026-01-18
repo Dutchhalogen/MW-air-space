@@ -10,31 +10,37 @@ function searchSite(query) {
     return;
   }
 
+  const snippetLength = 30; // Anzahl Zeichen vor/nach dem Suchwort
   let totalResults = 0;
 
   searchIndex.forEach(item => {
     const contentLower = item.content.toLowerCase();
     let startIndex = 0;
 
-    // Suche alle Vorkommen
     while ((startIndex = contentLower.indexOf(query, startIndex)) !== -1) {
+      
+      // Ausschnitt berechnen
+      const snippetStart = Math.max(0, startIndex - snippetLength);
+      const snippetEnd = Math.min(item.content.length, startIndex + query.length + snippetLength);
+      let snippet = item.content.substring(snippetStart, snippetEnd);
 
-      // Suchwort im Text markieren
-      const highlighted = item.content.replace(
-        new RegExp(query, "gi"),
-        match => `<mark>${match}</mark>`
-      );
+      // Markierung des Suchwortes
+      snippet = snippet.replace(new RegExp(query, "gi"), match => `<mark>${match}</mark>`);
 
-      // Ergebnis erzeugen
+      // Optional: "..." wenn Ausschnitt nicht am Textanfang/ende liegt
+      if (snippetStart > 0) snippet = "… " + snippet;
+      if (snippetEnd < item.content.length) snippet = snippet + " …";
+
+      // Treffer in Ergebnisliste einfügen
       resultsContainer.innerHTML += `
         <div class="list-group-item mb-2">
           <h5>${item.title}</h5>
-          <p>${highlighted}</p>
+          <p>${snippet}</p>
           <a href="${item.url}" class="btn btn-sm btn-primary">Zum Treffer</a>
         </div>
       `;
 
-      startIndex += query.length; // nächster Suchstart nach diesem Treffer
+      startIndex += query.length;
       totalResults++;
     }
   });
