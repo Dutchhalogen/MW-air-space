@@ -70,49 +70,41 @@ const searchIndex = [
     content: `Das vermutlich modernste System ist das der F-35A/B/C. Während die meisten modernen westlichen Flugzeuge die Standard Sensoren besitzen (Radar IRST Link16) und diese dann nachträglich fusionieren, ist die gesamte F-35 eigentlich ein vorfusioniertes Datensystem. Das Herzstück ist das MADL (Multifunction Advanced Datalink) - im Prinzip Link16 aber besser. Damit verbunden sind andere Fusionssysteme wie das AAQ-37 DAS, auch genannt das "Distributed Aperture System", das mehrere Kameras verbindet, um ein fusioniertes Bild der Umgebung zu erzeugen. Es erlaubt dem Piloten sogar, mit seinem Helm durch das Flugzeug zu schauen. Andere Bestandteile des Systems sind das AAQ-40 EOTS, ein Multispektrales Electro Optical Targeting System, das jegliche Waffen lenken kann, und das APG-81 Radar sowie das ASQ-239 Elektronische Kriegsführungssystem. All das macht die F-35 zum technologisch mit Abstand besten Flugzeug mit der besten Sensor-Fusion.
               Zugegeben haben fast alle modernen Flugzeuge Sensor Fusion, wenn auch nicht so gute wie der F-35. Eurofighter Typhoon, Dassault Rafale, Gripen E, F-22, F/A-18, Su-57, Su-35 und Mig-35 haben alle moderne und kompetente Systeme. Man muss auch immer bedenken, dass Sensor Fusion auch Nachteile hat. Insbesondere die Komplexität, die hohen Kosten und die "Überintegration". Überintegration bedeutet in diesem Fall, das Data Fusion erfordert, dass alle Systeme komplett vernetzt sind und nicht ohne einander auskommen. So kann ein Ausfall eines Systems den Ausfall aller Systeme bedeuten. Natürlich werden diese Probleme mitigiert, trotzdem KÖNNTE man den Ansatz der F-35, mehr auf Technologie und Integration zu setzen, anstatt auf Performance und Power, als schlecht ansehen. Es entsteht dasselbe Problem wie beim Killchain Prinzip.`
   },
-
   {
     title: "Fighter Generations – Einführung",
     url: "fighter_generations.html#intro",
     content: `Fighter Generations ordnen Kampfjets zu bestimmten Generationen zwischen 0 und 6 zu. Allerdings sind diese Zuordnungen nicht genau definiert und variieren von Quelle zu Quelle. Kampfjets wurden erstmals in den 1990ern Generationen zugewiesen. Es gibt unzählige Skalen für Generationen, darunter 1, 2, 3, 4, 4.5, 5 und 6. Einigkeit besteht lediglich darüber, dass die Generation zwischen 1970 und 1990 meist in zwei bis drei Untergruppen eingeteilt wird. Diese werden als vierte und 4.5te Generation bezeichnet. Sie sind heute die bei weitem verbreitetsten, während viele Länder zur fünften Generation wechseln und bereits an der sechsten Generation arbeiten. Auch anhand welcher Eigenschaften Flugzeuge den Generationen zugeordnet werden ist umstritten. Einige Merkmale sind jedoch relativ klar definiert. Flugzeuge mit geraden Flügeln gehören zur ersten Generation, ab der zweiten Generation treten gepfeilte Flügel auf. Stealth ist eine entscheidende Eigenschaft für die fünfte und sechste Generation. Radar und Radarlenkwaffen gibt es ab der dritten Generation, moderne Sensorsysteme meist ab der 4.5ten Generation. Diese Generationen gelten nur für Kampfjets und stellen keine offiziell festgelegte Klassifikation dar.`
   },
-
   {
     title: "Fighter Generations – 1st Generation",
     url: "fighter_generations.html#gen1",
     content: `Die erste Generation beschreibt Jets, die während oder direkt nach dem Zweiten Weltkrieg ihren Erstflug hatten. Sie zeichnen sich durch gerade Flügel aus und sind zwar schneller als Kolbenmotorflugzeuge, jedoch in allen anderen Bereichen unterlegen. Alte Jet-Triebwerke waren schwer, schwach und reagierten langsam auf Schubänderungen. Häufig wurden Centrifugal Flow Turbojets verwendet. Die Bewaffnung bestand ausschliesslich aus Maschinengewehren und die Elektronik war sehr limitiert. Beispiele sind Me-262, F-80, Mig-9 und die Gloster Meteor.`
   },
-
   {
     title: "Fighter Generations – 2nd Generation",
     url: "fighter_generations.html#gen2",
     content: `Die zweite Generation beschreibt Flugzeuge der späten 1940er und frühen 1950er Jahre. Sie besitzen meist nach hinten gepfeilte Flügel und Axial Flow Turbojets, welche viele Probleme der ersten Generation lösten. Die Elektronik war deutlich moderner, mit Feuerleitradars und hydraulisch-elektrischen Steuersystemen. Teilweise verfügten sie bereits über infrarotgesteuerte Kurzstrecken-Lenkwaffen. Einige Modelle konnten Überschallgeschwindigkeit erreichen. Beispiele sind F-86, Mig-15, Mig-17, Mig-19 und F-100.`
   },
-
   {
     title: "Fighter Generations – 3rd Generation",
     url: "fighter_generations.html#gen3",
     content: `Die dritte Generation umfasst Kampfjets aus den Jahren 1960 bis 1975. Alle Flugzeuge dieser Generation sind überschallfähig, teilweise bis Mach 2 oder 3. Die neue Raketen-Doktrin führte zu höherem Schub, mehr Treibstoff und stärkerer Bewaffnung, jedoch zu geringerer Wendigkeit. Maschinengewehre wurden durch Radar- und Infrarotlenkwaffen ersetzt. Die Flugzeuge verfügten nun über echte Such- und Verfolgungsradare, was BVR-Kampf ermöglichte. Erste teildigitale Computersysteme wurden eingesetzt, wie bei der F-4 Phantom. Beispiele sind Mig-21, F-4 Phantom, F-5, Mig-23, English Electric Lightning und Mirage III.`
   },
-
   {
     title: "Fighter Generations – 4th Generation",
     url: "fighter_generations.html#gen4",
     content: `Die vierte Generation beschreibt Kampfflugzeuge aus der Zeit zwischen 1975 und 1990. Sie zeichnet sich durch verbesserte Elektronik, grössere Reichweiten und die Einführung von Multirole-Fähigkeiten aus. Flugzeuge konnten nun mehrere Missionen erfüllen. Dies wurde durch digitale Multifunktionscomputer, integrierte Schaltkreise und moderne Mikroelektronik ermöglicht. Computerunterstützte Aerodynamik verbesserte Wendigkeit und Flugleistung. Low Bypass Turbofans führten zu besseren Schub-Gewichts-Verhältnissen. Einige Flugzeuge wie die F-14 und Su-24 nutzten verstellbare Pfeilflügel. Beispiele sind F-14, F-15, F-16, F/A-18, Mig-29, Su-27, Mirage 2000 und Panavia Tornado.`
   },
-
   {
     title: "Fighter Generations – 4.5th Generation",
     url: "fighter_generations.html#gen4.5",
     content: `Die 4.5te Generation ist eine Weiterentwicklung der vierten Generation und besitzt teilweise Technologien der fünften Generation. Diese Flugzeuge wurden hauptsächlich zwischen 1990 und 2000 entwickelt, einige werden bis heute produziert. Zu den wichtigsten Merkmalen gehören AESA-Radare, moderne Infrarotsensoren, Sensor Fusion, Datenlinks und teilweise Radarabsorptionsmaterialien. Obwohl diese Flugzeuge sehr leistungsfähig sind, setzen die meisten Länder langfristig auf Stealth-Flugzeuge, da diese Gegner auf grosse Distanz bekämpfen können, während sie selbst nur schwer entdeckt werden. Beispiele sind F-15E, F-16E, Su-30, Su-35, Mig-35, Eurofighter Typhoon, Rafale und J-10.`
   },
-
   {
     title: "Fighter Generations – 5th Generation",
     url: "fighter_generations.html#gen5",
     content: `Die fünfte Generation ist derzeit die modernste Generation im aktiven Dienst. Der erste einsatzfähige 5th-Gen-Kampfjet war die F-22, die zwischen 1995 und 2005 eingeführt wurde. Charakteristisch sind vollständig integrierte Stealth-Eigenschaften, stark reduzierte Radarquerschnitte und interne Waffenschächte. Moderne Sensor Fusion, Thrust Vectoring und Infrarotsuchsysteme wie IRST sind verbreitet. Trotz Stealth bleibt die Wärmesignatur eine Herausforderung. Flugzeuge dieser Generation befinden sich weiterhin in aktiver Weiterentwicklung. Beispiele sind F-22, F-35, Su-57, J-20 und J-35.`
   },
-
   {
     title: "Fighter Generations – 6th Generation",
     url: "fighter_generations.html#gen6",
