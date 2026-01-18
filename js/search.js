@@ -1,35 +1,45 @@
 // js/search.js
+
 function searchSite(query) {
   query = query.toLowerCase().trim();
   const resultsContainer = document.getElementById("search-results");
   resultsContainer.innerHTML = "";
 
-  if (query.length < 1) {
-    resultsContainer.innerHTML = "<p>Bitte einen Suchbegriff eingeben.</p>";
+  if (!query || query.length < 2) {
+    resultsContainer.innerHTML = "<p>Bitte Suchbegriff eingeben.</p>";
     return;
   }
 
-  const results = searchIndex.filter(item =>
-    item.content.toLowerCase().includes(query)
-  );
+  let totalResults = 0;
 
-  if (results.length === 0) {
-    resultsContainer.innerHTML = "<p>Keine Treffer gefunden.</p>";
-    return;
-  }
+  searchIndex.forEach(item => {
+    const contentLower = item.content.toLowerCase();
+    let startIndex = 0;
 
-  results.forEach(result => {
-    // Optional: kurzen Ausschnitt um das Wort
-    const index = result.content.toLowerCase().indexOf(query);
-    let snippet = result.content.substring(index - 20 < 0 ? 0 : index - 20, index + 80);
-    snippet = snippet.replace(new RegExp(query, "ig"), `<mark>${query}</mark>`);
+    // Suche alle Vorkommen
+    while ((startIndex = contentLower.indexOf(query, startIndex)) !== -1) {
 
-    resultsContainer.innerHTML += `
-      <div class="list-group-item mb-2">
-        <h5>${result.title}</h5>
-        <p>${snippet}...</p>
-        <a href="${result.url}" class="btn btn-sm btn-primary">Zum Treffer</a>
-      </div>
-    `;
+      // Suchwort im Text markieren
+      const highlighted = item.content.replace(
+        new RegExp(query, "gi"),
+        match => `<mark>${match}</mark>`
+      );
+
+      // Ergebnis erzeugen
+      resultsContainer.innerHTML += `
+        <div class="list-group-item mb-2">
+          <h5>${item.title}</h5>
+          <p>${highlighted}</p>
+          <a href="${item.url}" class="btn btn-sm btn-primary">Zum Treffer</a>
+        </div>
+      `;
+
+      startIndex += query.length; // nächster Suchstart nach diesem Treffer
+      totalResults++;
+    }
   });
+
+  if (totalResults === 0) {
+    resultsContainer.innerHTML = "<p>Keine Treffer gefunden.</p>";
+  }
 }
