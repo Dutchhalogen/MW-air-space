@@ -1,1 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fighter Generations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      html { scroll-behavior: smooth; }
+      section { scroll-margin-top: 80px; } /* wichtig wegen Navbar */
+    </style>
+    
+  </head>
+    
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-light" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLight" aria-controls="navbarLight" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse show" id="navbarLight">
+          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                Home
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                Stealth 
+              </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="stealth.html#intro">Einführung</a></li>
+                  <li><a class="dropdown-item" href="stealth.html#visual">Visual Stealth</a></li>
+                  <li><a class="dropdown-item" href="stealth.html#radar">Radar Stealth</a></li>
+                  <li><a class="dropdown-item" href="stealth.html#infrared">Infrared Stealth</a></li>
+                  <li><a class="dropdown-item" href="stealth.html#sonar">Sonar Stealth</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                Fighter GENs 
+              </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="fighter_generations.html#intro">Einführung</a></li>
+                  <li><a class="dropdown-item" href="fighter_generations.html#gen1">1st Generation</a></li>
+                  <li><a class="dropdown-item" href="fighter_generations.html#gen2">2nd Generation</a></li>
+                  <li><a class="dropdown-item" href="fighter_generations.html#gen3">3rd Generationh</a></li>
+                  <li><a class="dropdown-item" href="fighter_generations.html#gen4">4th Generation</a></li>
+                  <li><a class="dropdown-item" href="fighter_generations.html#gen4.5">4.5th Generation</a></li>
+                  <li><a class="dropdown-item" href="fighter_generations.html#gen5">5th Generation</a></li>
+                  <li><a class="dropdown-item" href="fighter_generations.html#gen6">6th Generation</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sensor_fusion.html">
+                Sensor Fusion
+              </a>
+            </li>
 
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <section id="intro">
+        <h1>Einführung</h1>
+        <p>Hier erklärst du, was Stealth bedeutet …</p>
+      </section>
+    
+      <section id="visual" class="mt-5">
+        <h2>Visual Stealth</h2>
+        <p>Text zu Tarnung, Farbe, Form …</p>
+      </section>
+    
+      <section id="radar" class="mt-5">
+        <h2>Radar Stealth</h2>
+        <p>Radarabsorption, Winkel, Materialien …</p>
+      </section>
+    
+      <section id="infrared" class="mt-5">
+        <h2>Infrared Stealth</h2>
+        <p>Wärmesignaturen …</p>
+      </section>
+    
+      <section id="sonar" class="mt-5">
+        <h2>Sonar Stealth</h2>
+        <p>Unterwasser-Tarnung …</p>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+              crossorigin="anonymous"></script>
+  </body>
+</html>
