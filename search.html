@@ -7,22 +7,54 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     html { scroll-behavior: smooth; }
-    mark { background-color: yellow; } /* Hervorhebung */
+
+    mark {
+      background-color: yellow;
+    }
+
+    #search-results {
+      margin-top: 20px;
+    }
+
+    /* Optional: max Höhe für Scrollbereich */
+    #search-results {
+      max-height: 75vh;
+      overflow-y: auto;
+    }
+
+    /* Boxen & Buttons */
+    .result-item {
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background-color: #f8f9fa;
+    }
+
+    .result-item h5 {
+      margin-bottom: 0.5rem;
+    }
+
+    .result-item a.btn {
+      transition: all 0.2s;
+    }
+    .result-item a.btn:hover {
+      transform: translateY(-2px);
+    }
   </style>
 </head>
 <body class="container mt-5">
 
   <h1>Suchergebnisse</h1>
 
-  <!-- HIER WERDEN DIE TREFFER ANGEZEIGT -->
-  <div id="search-results" class="list-group mt-4"></div>
+  <div id="search-results"></div>
 
-  <!-- JS-Dateien einbinden -->
+  <!-- JS-Dateien -->
   <script src="js/search-data.js"></script>
   <script src="js/search.js"></script>
 
   <script>
-    // Suchbegriff aus URL auslesen
+    // Suchbegriff aus URL auslesen und Suche starten
     const params = new URLSearchParams(window.location.search);
     const query = params.get("q");
     if (query) {
