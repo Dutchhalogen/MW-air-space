@@ -92,11 +92,15 @@
                 </ul>
             </li>
             
-            <li class="nav-item">
-              <a class="nav-link text-dark fs-4" href="sensor_fusion.html">
-                Sensor Fusion
-              </a>
-            </li>
+              <!-- Sensor Fusion Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark fs-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sensor Fusion</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fs-5" href="sensor_fusion.html#intro">Einführung</a></li>
+              <li><a class="dropdown-item fs-5" href="sensor_fusion.html#modern">Moderne Sensor Fusion</a></li>
+              <li><a class="dropdown-item fs-5" href="sensor_fusion.html#system">Systeme der Sensor Fusion</a></li>
+            </ul>
+          </li>
 
           </ul>
           <form class="d-flex gap-2" action="search.html" method="get">
@@ -118,7 +122,7 @@
       </section>
 
       <section id="modern">
-        <h1>Moderne Sensor Fusion</h1>
+        <h2>Moderne Sensor Fusion</h2>
         <p>Moderne Sensor Fusion geht jedoch auch über das einfache Verwerten von Informationen hinaus. Einfache Systeme waren schon in den 70er Jahren vorhanden und haben hauptsächlich Informationen innerhalb eines Systems sortiert und arrangiert. Heutige Systeme jedoch machen weit mehr aus den Informationen. Sie werden zusätzlich analysiert, gefiltert, verbessert, kombiniert und geteilt, auch mit anderen Einheiten. So können Flugzeuge, die mit NATO Link16 ausgestattet sind, Informationen vollständig automatisiert teilen und verwerten. Angenommen, eine E-3 AWACS (Fliegende Radarstation) erfasst ein Ziel. Dieses Flugzeug besitzt selber jedoch keine Waffen. Mit dem Link16 kann es die Zieldaten an eine F-35 in der Nähe schicken, die dann das Ziel zwar nicht selber erfasst, aber trotzdem eine Aim-120D (Air to Air Missile) abfeuern kann. Diese bekommt dann ihre Micourse Zieldaten von der E-3, obwohl die F-35 sie abgefeuert hat. Sagen wir jetzt aber die E-3 kann die Aim-120D nicht bis zum Ziel lenken, da es im Zielgebiet zu gefährlich für eine unbewaffnete Maschine ist. In diesem Fall kann eine F-22, die bisher überhaupt nicht beteiligt war, bei der Aktion teilnehmen. Wegen der Tarnkappen Eigenschaften der F-22 hat sie keine Probleme im Zielgebiet. Letztendlich wird die Aim-120D die letzten etwa 25 Kilometer vom eigenen internen Radar gelenkt und erfüllt die Mission. All das ist nur möglich, weil <strong>ALLE</strong> beteiligten Flugzeuge NATO Link16 besitzen. Natürlich haben China, Russland und andere Länder eigene Systeme entwickelt, aber NATO Link16 ist am weitesten verbreitet.</p>
         <p>Besonders bei unbemannten oder "intelligenten" Systemen werden solche Systeme immer wichtiger, da diese entweder ohne Menschen operieren oder wegen ihrer Funktionsweise einfach sehr viele Daten brauchen und diese nur durch Sensorfusion erhalten können. Auch die wachsenden Zahlen an Stealth Flugzeugen erfordern Sensor Fusion, da diese mit nur einem alleinstehenden Sensor schwer zu erfassen sind.</p>
         <p>Das vorherige Beispiel ist nur eines von vielen Einsatzgebieten von Datalinks und Sensorfusion. </p>
@@ -127,7 +131,7 @@
       </section>
 
       <section id="system">
-        <h1>Systeme der Sensor Fusion</h1>
+        <h2>Systeme der Sensor Fusion</h2>
         <p>Das vermutlich modernste System ist das der F-35A/B/C. Während die meisten modernen westlichen Flugzeuge die Standard Sensoren besitzen (Radar IRST Link16) und diese dann nachträglich fusionieren, ist die gesamte F-35 eigentlich ein vorfusioniertes Datensystem. Das Herzstück ist das MADL (Multifunction Advanced Datalink) - im Prinzip Link16 aber besser. Damit verbunden sind andere Fusionssysteme wie das AAQ-37 DAS, auch genannt das "Distributed Aperture System", das mehrere Kameras verbindet, um ein fusioniertes Bild der Umgebung zu erzeugen. Es erlaubt dem Piloten sogar, mit seinem Helm durch das Flugzeug zu schauen. Andere Bestandteile des Systems sind das AAQ-40 EOTS, ein Multispektrales Electro Optical Targeting System, das jegliche Waffen lenken kann, und das APG-81 Radar sowie das ASQ-239 Elektronische Kriegsführungssystem. All das macht die F-35 zum technologisch mit Abstand besten Flugzeug mit der besten Sensor-Fusion.</p>
         <p>Zugegeben haben fast alle modernen Flugzeuge Sensor Fusion, wenn auch nicht so gute wie der F-35. Eurofighter Typhoon, Dassault Rafale, Gripen E, F-22, F/A-18, Su-57, Su-35 und Mig-35 haben alle moderne und kompetente Systeme. Man muss auch immer bedenken, dass Sensor Fusion auch Nachteile hat. Insbesondere die Komplexität, die hohen Kosten und die "Überintegration". Überintegration bedeutet in diesem Fall, das Data Fusion erfordert, dass alle Systeme komplett vernetzt sind und nicht ohne einander auskommen. So kann ein Ausfall eines Systems den Ausfall aller Systeme bedeuten. Natürlich werden diese Probleme mitigiert, trotzdem KÖNNTE man den Ansatz der F-35, mehr auf Technologie und Integration zu setzen, anstatt auf Performance und Power, als schlecht ansehen. Es entsteht dasselbe Problem wie beim <a href="killchain.html#intro">Killchain</a> Prinzip.</p>
       </section>
