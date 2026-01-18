@@ -154,51 +154,77 @@ const searchIndex = [
   title: "Killchain – Killnet",
   url: "killchain.html#killnet",
   content: `Ein "Killnet" versucht nun das Problem des "schwächsten Glieds" zu lösen, indem es das Konzept der Killchain, bei dem ein einzelnes oder einige wenige Flugzeuge die ganze Chain ausführen, auflöst. Stattdessen wird ein Netzwerk aus vielen Flugzeugen gebildet, die untereinander kommunizieren. So können sich Flugzeuge auf einzelne Abschnitte der Chain konzentrieren und die Informationen einem anderen Flugzeug übergeben, das dann seinerseits den nächsten Schritt ausführt. Falls nun ein "Glied" ausfällt, können die übrigen versuchen, das Loch im Netz zu füllen und für das ausgefallene Flugzeug einzuspringen. In der Theorie klingt dieses System zwar fast perfekt, jedoch ist die Ausführung hoch komplex. Während bei nur einem Flugzeug lediglich einzelne Schritte scheitern können, kann bei einem Netz von mehreren Flugzeugen zusätzlich noch der komplexe Austausch von Daten zwischen den Schritten fehlschlagen oder zu lange dauern. Obwohl das System also einige existierende Schwachstellen reduziert, integriert es zugleich viele neue.`
+},
+  {
+  title: "UAV & UCAV – Einführung",
+  url: "uav_ucav.html#intro",
+  content: `Drohnen nehmen in der modernen Kriegsführung eine sehr bedeutende Rolle ein und werden in naher Zukunft einen Schwerpunkt für vieler Länder bilden. UAVs sind unbemannte Aufklärungsdrohnen, UCAVs sind unbemannte Kampf- oder Mehrzweckdrohnen.`
+},
+{
+  title: "Loitering Munitions (Kamikaze-Drohnen)",
+  url: "uav_ucav.html#lm",
+  content: `Loitering Munitions (Kamikaze-Drohnen) sind Drohnen, welche nicht nur das Liefersystem einer Waffe darstellen, sondern auch die Waffe selbst. Sie fliegen direkt ins Ziel hinein und explodieren.`
+},
+{
+  title: "UCAs",
+  url: "uav_ucav.html#uca",
+  content: `UCAs sind wiederverwendbare UCAVs und werden nach Gewicht, Größe und Einsatzgebiet unterteilt. Gruppen wie MALE und HALE bestimmen die Einsatzdauer und Flughöhe.`
+},
+{
+  title: "Attack Drones",
+  url: "uav_ucav.html#attack",
+  content: `Attack Drones werden für Close Air Support und Interdiction Strikes genutzt, z.B. MQ-1 Predator, MQ-9 Reaper, Wing Loong II und Hermes-Serie. Sie fliegen bewaffnet ins Zielgebiet und feuern Waffen auf die zugewiesenen Ziele ab.`
+},
+{
+  title: "Reconnaissance Drones",
+  url: "uav_ucav.html#recon",
+  content: `Reconnaissance Drones sammeln Informationen über feindliche Einrichtungen und Bewegungen. Vorteile gegenüber bemannten Systemen: geringere Gefahr für Menschenleben und längere Flugdauer. Beispiele: RQ-4, RQ-7, RQ-170.`
+},
+{
+  title: "Electronic Warfare",
+  url: "uav_ucav.html#ew",
+  content: `Electronic Warfare Drohnen stören gegnerische Kommunikation und Radar oder lenken gegnerische Aufmerksamkeit auf sich ab. Spezielle EW-Drohnen sind selten, viele Mehrzweckdrohnen können dies jedoch als Zweitmission ausführen.`
+},
+{
+  title: "Loyal Wingman Drones",
+  url: "uav_ucav.html#lw",
+  content: `Loyal Wingman Drones unterstützen bemannte Kampfjets, führen Befehle aus und können autonome Missionen fliegen. Beispiele: S-70, YFQ-42, YFQ-44.`
+},
+{
+  title: "Autonome Drohnen",
+  url: "uav_ucav.html#ki",
+  content: `Autonome Drohnen werden vollständig von KI gesteuert, z.B. X-62 Vista, S-70, YFQ-42 und YFQ-44. Sie sind für autonome Tests, Simulationen und künftigen Kampfeinsatz konzipiert.`
+},
+{
+  title: "KI & Digitalisierung – Einführung",
+  url: "ki_digitalisierung.html#intro",
+  content: `KI und Digitalisierung werden in der modernen Kriegsführung immer wichtiger. Digitalisierung gibt es seit den 80er-Jahren, KI wird seit ca. zehn Jahren deklassifiziert eingesetzt. Beide Technologien beeinflussen Logistik, Flugsteuersysteme, Waffen- und Zielerfassung sowie autonome Flugsysteme.`
+},
+{
+  title: "Logistik",
+  url: "ki_digitalisierung.html#logistik",
+  content: `In der Logistik werden Digitalisierung und KI verwendet, um Wartung und Ersatzteilmanagement zu verbessern. Beispiel: F-35 nutzt ODIN für vollautomatische Störungserfassung, Reparaturplanung und Teilebereitstellung.`
+},
+{
+  title: "Flugsteuersysteme",
+  url: "ki_digitalisierung.html#flysystem",
+  content: `Fly-by-Wire-Systeme erlauben das Fliegen extrem instabiler Flugzeuge. Der Pilot bewegt den Knüppel, ein Computer berechnet optimal die Steuerflächenauslenkung. Erstmal bei der F-16 eingesetzt, heute Standard.`
+},
+{
+  title: "Autopiloten",
+  url: "ki_digitalisierung.html#auto",
+  content: `Moderne Autopiloten führen automatische Manöver, Landungen und Zielanvisierung aus. Sie verhindern Kollisionen, stabilisieren das Flugzeug und können bei Pilotenausfall reagieren.`
+},
+{
+  title: "Waffen- und Zielerfassung",
+  url: "ki_digitalisierung.html#targetlock",
+  content: `KI hilft bei der Zielerkennung und Angriffsdynamik. Beispiel: AGM-158 LRASM kann mit KI den optimalen Einschlagsort analysieren. Die F-35 nutzt ein 360° Multispektral-Zielsystem (DAS) zur Waffenführung.`
+},
+{
+  title: "Vollautonome Drohnen",
+  url: "ki_digitalisierung.html#drohne",
+  content: `KI-gesteuerte vollautonome Drohnen agieren ohne menschliche Steuerung. Beispiele: X-62 Vista (Test/Simulation), S-70 (aktiver Einsatz), YFQ-42 und YFQ-44. Die KI steuert Zielsysteme, Flugmanöver und kann mit KI-Wartungssystemen interagieren.`
 }
 
 
 ];
-
-
-searchData.push({
-  title: "UAV & UCAV",
-  url: "uav_ucav.html",
-  sections: [
-    {
-      id: "intro",
-      text: `Drohnen nehmen in der modernen Kriegsführung eine sehr bedeutende Rolle ein und werden in naher Zukunft einen Schwerpunkt für vieler Länder bilden. Allerdings gibt es sehr viele verschiedene Typen von Drohnen mit sehr unterschiedlichen Aufgaben und Designs. Grundsätzlich lassen sich Drohnen in zwei Hauptkategorien unterteilen: UAVs und UCAVs. UAV steht für «Unmanned Aerial Vehicle», während UCAV für «Unmanned Combat Aerial Vehicle» steht.`
-    },
-    {
-      id: "dif",
-      text: `Der grosse Unterschied ist, dass UAVs meist auf zivilen Konstruktionen basieren und somit auch aus zivilen Teilen mit ziviler Countermeasure Resistance bestehen, wodurch sie nur begrenzt nutzbar sind. UCAVs sind hingegen von Grund auf für das Militär konzipiert. Sie sind deshalb auch resistenter gegenüber Angriffen und haben wesentlich höhere Trefferwahrscheinlichkeiten. Innerhalb der UCAVs gibt es eine zweite, wichtige Unterteilung, in sogenannte Loitering Munitions (Kamikaze-Drohnen) sowie Unmanned Combat Aircrafts (UCAs), welche als wiederverwendbare UCAVs gelten.`
-    },
-    {
-      id: "lm",
-      text: `Loitering Munitions sind Drohnen, welche nicht nur das Liefersystem einer Waffe darstellen, sondern auch die Waffe selbst. Sie fliegen direkt ins Ziel hinein und explodieren. Die Grenze zu Marschflugkörpern ist deshalb sehr unscharf. LMs meist günstiger und leichter als Marschflugkörper, werden oft aus kleinerer Distanz gestartet und kreisen dann sehr lange Zeit passiv über dem Zielgebiet.`
-    },
-    {
-      id: "uca",
-      text: `UCAs sind die wesentlich spannendere Gruppe der UCAVs. Diese Drohnen können mehrfach genutzt werden und werden nach Gewicht, Grösse und Einsatzgebiet unterteilt. Die wichtigsten Gruppen sind Attack Drones, Reconnaissance Drones, EW Drones und Loyal Wingman Drones.`
-    },
-    {
-      id: "attack",
-      text: `Attack Drones sind Drohnen, die für Close Air Support und Interdiction Strikes genutzt werden. Dabei fliegt die bewaffnete Drohne zum Zielgebiet und feuert ihre Waffen auf zugewiesene Ziele ab. Beispiele: MQ-1 Predator, MQ-9 Reaper, Wing Loong II, Hermes-Serie.`
-    },
-    {
-      id: "recon",
-      text: `Reconnaissance Drones sind Spionage- und Aufklärungsplattformen. Sie sammeln Informationen über feindliche Einrichtungen und Bewegungen. Vorteil gegenüber bemannten Systemen: geringere Gefahr für Menschenleben, lange Flugzeiten (über 30 Stunden), ISR-Drohnen wie RQ-4, RQ-7, RQ-170.`
-    },
-    {
-      id: "ew",
-      text: `Electronic Warfare Drohnen gewährleisten elektronische Kriegsführung. Sie stören gegnerische Kommunikation und Radar, verhindern Aufmerksamkeit auf bemannte Flugzeuge. Speziell dafür gebaute EW-Drohnen sind selten, viele Mehrzweckdrohnen können diese Mission zusätzlich ausführen.`
-    },
-    {
-      id: "lw",
-      text: `Loyal Wingman Drones unterstützen bemannte Kampfjets im Einsatz. Sie führen Befehle aus und kehren zurück, teilweise gesteuert durch KI. Beispiele: russische S-70, amerikanische YFQ-42 und YFQ-44.`
-    },
-    {
-      id: "ki",
-      text: `Autonome Drohnen werden vollständig von KI gesteuert. Beispiele: X-62 Vista (F-16D Modifikation). Sie führen Flugmanöver selbstständig aus und können Luftkämpfe simulieren. Der Einsatz im echten Kampf ist bisher selten.`
-    }
-  ]
-});
