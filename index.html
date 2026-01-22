@@ -49,6 +49,13 @@
     
     <script src="js/search-data.js"></script>
     <script src="js/search.js"></script>
+
+    <script>
+      window.addEventListener("load", () => {
+        const nav = document.querySelector(".navbar");
+        document.body.style.paddingTop = nav.offsetHeight + "px";
+      });
+    </script>
     
   </body>
 </html>
