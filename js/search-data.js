@@ -224,7 +224,53 @@ const searchIndex = [
   title: "Vollautonome Drohnen",
   url: "ki_digitalisierung.html#drohne",
   content: `KI-gesteuerte vollautonome Drohnen agieren ohne menschliche Steuerung. Beispiele: X-62 Vista (Test/Simulation), S-70 (aktiver Einsatz), YFQ-42 und YFQ-44. Die KI steuert Zielsysteme, Flugmanöver und kann mit KI-Wartungssystemen interagieren.`
+},
+{
+  title: "Electronic Warfare – Einführung",
+  url: "electronic_warfare.html#intro",
+  content: `Electronic Warfare, auch EW genannt, beschreibt Kriegsführung mithilfe elektromagnetischer Wellen anstelle physischer Waffen. Die Hauptkategorien sind ECM, ECCM und ESM, welche sich auf Störung, Schutz und Unterstützung elektronischer Systeme konzentrieren.`
+},
+{
+  title: "Signal Jamming",
+  url: "electronic_warfare.html#jam",
+  content: `Signal Jamming stört oder unterbricht gegnerische Signale wie Kommunikation, Radar, GPS oder Sensoren. Ziel ist es, feindliche Systeme unbrauchbar oder unzuverlässig zu machen.`
+},
+{
+  title: "Spoofing",
+  url: "electronic_warfare.html#spoof",
+  content: `Spoofing manipuliert Signale so, dass der Gegner falsche Informationen empfängt, ohne die Manipulation zu bemerken. Dadurch können gegnerische Systeme gezielt in die Irre geführt werden.`
+},
+{
+  title: "EMP-Waffen",
+  url: "electronic_warfare.html#emp",
+  content: `EMP-Waffen zerstören elektronische Systeme dauerhaft, indem sie Hardware durch elektromagnetische Impulse beschädigen. Sie unterscheiden sich von Jamming durch ihre permanente Wirkung.`
+},
+{
+  title: "ECM – Beispiele",
+  url: "electronic_warfare.html#example",
+  content: `Beispiele für ECM sind Towed Decoys wie das AN/ALE-50 oder AN/ALE-70, welche gegnerische Sensoren täuschen und vom eigentlichen Flugzeug ablenken.`
+},
+{
+  title: "Spezialisierte ECM-Flugzeuge",
+  url: "electronic_warfare.html#spec",
+  content: `Spezialisierte Flugzeuge wie die EA-18G Growler führen offensive elektronische Angriffe durch. Moderne Kampfflugzeuge besitzen zwar eigene ECM-Systeme, sind jedoch offensiv begrenzt.`
+},
+{
+  title: "ECCM – Schutz vor Electronic Warfare",
+  url: "electronic_warfare.html#eccm",
+  content: `ECCM dient dem Schutz eigener Systeme gegen elektronische Angriffe. Dazu gehören widerstandsfähige Hardware, Software sowie Techniken wie Home-on-Jamming.`
+},
+{
+  title: "Electronic Support Measures",
+  url: "electronic_warfare.html#esm",
+  content: `Electronic Support Measures umfassen Aufklärung, Signalverarbeitung, sichere Kommunikation und teilweise Sensorfusion. Die genaue Definition variiert je nach militärischem Standard.`
+},
+{
+  title: "Künstliche Intelligenz in Electronic Warfare",
+  url: "electronic_warfare.html#ki",
+  content: `Künstliche Intelligenz wird in der elektronischen Kriegsführung eingesetzt, um Störungen zu erkennen, abzuwehren oder autonome Systeme zu betreiben, die weniger anfällig für Jamming und Spoofing sind.`
 }
+
 
 
 ];
