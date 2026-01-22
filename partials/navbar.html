@@ -1,6 +1,6 @@
 
 <nav class="navbar fixed-top navbar-expand-xl navbar-light" style="background-color:#e3f2fd;">
-  <div class="container-fluid">
+  <div class="container-fluid flex-column">
 
     <a class="navbar-brand fs-3 text-dark" href="index.html">
       Home
@@ -12,7 +12,16 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
- <div class="collapse navbar-collapse" id="mainNavbar">
+    <div class="d-flex w-100 align-items-center justify-content-between">
+      <a class="navbar-brand fs-3 text-dark" href="index.html">Home</a>
+    
+      <form class="d-flex gap-2">
+        <input class="form-control fs-5" type="search" placeholder="Search">
+        <button class="btn btn-outline-primary fs-5">Search</button>
+      </form>
+    </div>
+
+  <input class="form-control fs-5" type="search" placeholder="Search">
     
       <!-- MEGA DROPDOWNS -->
       <ul class="navbar-nav me-auto fs-4">
