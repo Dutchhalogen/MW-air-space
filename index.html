@@ -50,16 +50,34 @@
 
     <!-- FIX für fixed-top + flex-wrap Navbar -->
     <script>
-      function fixNavbarOffset() {
+      function applyNavbarOffset() {
         const nav = document.querySelector(".navbar.fixed-top");
-        if (nav) {
-          document.body.style.paddingTop = nav.offsetHeight + "px";
-        }
+        if (!nav) return;
+    
+        const height = nav.getBoundingClientRect().height;
+        document.body.style.paddingTop = height + "px";
       }
-
-      window.addEventListener("load", fixNavbarOffset);
-      window.addEventListener("resize", fixNavbarOffset);
+    
+      // sofort nach DOM
+      document.addEventListener("DOMContentLoaded", () => {
+        applyNavbarOffset();
+    
+        // Bootstrap braucht manchmal etwas Zeit
+        setTimeout(applyNavbarOffset, 50);
+        setTimeout(applyNavbarOffset, 200);
+    
+        // Beobachtet echte Größenänderungen (flex-wrap!)
+        const nav = document.querySelector(".navbar.fixed-top");
+        if (nav && "ResizeObserver" in window) {
+          const ro = new ResizeObserver(applyNavbarOffset);
+          ro.observe(nav);
+        }
+      });
+    
+      // Fallback
+      window.addEventListener("resize", applyNavbarOffset);
     </script>
+
     
     <script src="js/load-navbar.js"></script>
     
