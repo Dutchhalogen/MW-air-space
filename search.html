@@ -92,5 +92,19 @@
   <!-- SUCHLOGIK (ZULETZT!) -->
   <script src="js/search.js"></script>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      const query = params.get("q");
+  
+      if (query) {
+        searchSite(query);
+      } else {
+        document.getElementById("search-results").innerHTML =
+          "<p>Kein Suchbegriff angegeben.</p>";
+      }
+    });
+  </script>
+
 </body>
 </html>
