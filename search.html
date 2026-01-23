@@ -3,8 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Suchergebnisse</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     html { scroll-behavior: smooth; }
 
@@ -12,82 +16,81 @@
       background-color: yellow;
     }
 
-    #search-results {
-      margin-top: 20px;
+    body {
+      padding-top: 5rem; /* Fallback */
     }
 
-    /* Optional: max Höhe für Scrollbereich */
     #search-results {
+      margin-top: 1rem;
       max-height: 75vh;
       overflow-y: auto;
     }
 
-    /* Boxen & Buttons */
     .result-item {
       padding: 1rem;
       margin-bottom: 1rem;
       border-radius: 0.5rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       background-color: #f8f9fa;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     .result-item h5 {
       margin-bottom: 0.5rem;
     }
 
-    .result-item a.btn {
-      transition: all 0.2s;
-    }
     .result-item a.btn:hover {
       transform: translateY(-2px);
     }
   </style>
 </head>
-<body class="container mt-5 py-5">
 
+<body>
+
+  <!-- NAVBAR (wird per JS geladen) -->
   <div id="navbar-container"></div>
 
+  <!-- CONTENT -->
+  <main class="container mt-4">
+    <h1 class="mb-4">Suchergebnisse</h1>
+    <div id="search-results"></div>
+  </main>
 
-  <h1>Suchergebnisse</h1>
+  <!-- Bootstrap JS (NUR EINMAL!) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-  <div id="search-results"></div>
+  <!-- Navbar Loader -->
+  <script src="js/load-navbar.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    
-    <script src="js/load-navbar.js"></script>
-    
-    <script src="js/search-data.js"></script>
-    <script src="js/search.js"></script>
+  <!-- Navbar Höhen-Fix (fixed-top + flex-wrap safe) -->
+  <script>
+    function applyNavbarOffset() {
+      const nav = document.querySelector(".navbar.fixed-top");
+      if (!nav) return;
 
-      <!-- FIX für fixed-top + flex-wrap Navbar -->
-    <script>
-      function applyNavbarOffset() {
-        const nav = document.querySelector(".navbar.fixed-top");
-        if (!nav) return;
-    
-        const height = nav.getBoundingClientRect().height;
-        document.body.style.paddingTop = height + "px";
+      document.body.style.paddingTop =
+        nav.getBoundingClientRect().height + "px";
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      applyNavbarOffset();
+
+      setTimeout(applyNavbarOffset, 100);
+      setTimeout(applyNavbarOffset, 300);
+
+      const nav = document.querySelector(".navbar.fixed-top");
+      if (nav && "ResizeObserver" in window) {
+        new ResizeObserver(applyNavbarOffset).observe(nav);
       }
-    
-      // sofort nach DOM
-      document.addEventListener("DOMContentLoaded", () => {
-        applyNavbarOffset();
-    
-        // Bootstrap braucht manchmal etwas Zeit
-        setTimeout(applyNavbarOffset, 50);
-        setTimeout(applyNavbarOffset, 200);
-    
-        // Beobachtet echte Größenänderungen (flex-wrap!)
-        const nav = document.querySelector(".navbar.fixed-top");
-        if (nav && "ResizeObserver" in window) {
-          const ro = new ResizeObserver(applyNavbarOffset);
-          ro.observe(nav);
-        }
-      });
-    
-      // Fallback
-      window.addEventListener("resize", applyNavbarOffset);
-    </script>
+    });
+
+    window.addEventListener("resize", applyNavbarOffset);
+  </script>
+
+  <!-- SUCHDATEN -->
+  <script src="js/search-data.js"></script>
+
+  <!-- SUCHLOGIK (ZULETZT!) -->
+  <script src="js/search.js"></script>
 
 </body>
 </html>
