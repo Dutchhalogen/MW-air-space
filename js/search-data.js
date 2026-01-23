@@ -269,7 +269,44 @@ const searchIndex = [
   title: "Künstliche Intelligenz in Electronic Warfare",
   url: "electronic_warfare.html#ki",
   content: `Künstliche Intelligenz wird in der elektronischen Kriegsführung eingesetzt, um Störungen zu erkennen, abzuwehren oder autonome Systeme zu betreiben, die weniger anfällig für Jamming und Spoofing sind.`
+},
+
+{
+  title: "Engines – Einführung",
+  url: "engines.html#intro",
+  content: `Variable Cycle Engines sind eine Weiterentwicklung klassischer Turbinentriebwerke. Sie kombinieren Eigenschaften von Turbojets und Turbofans, um sowohl hohe Geschwindigkeit als auch Effizienz zu ermöglichen. Besonders relevant sind dabei Three-Stream-Konzepte für moderne Kampfjets.`
+},
+{
+  title: "Engines – Grundprinzip",
+  url: "engines.html#basic",
+  content: `Alle Turbinentriebwerke basieren auf demselben Grundprinzip: Luftansaugung, Verdichtung im Kompressor, Verbrennung in der Brennkammer und Energiegewinnung über die Turbine. Nachbrenner können zusätzlichen Schub erzeugen, erhöhen jedoch den Treibstoffverbrauch stark.`
+},
+{
+  title: "Engines – Turbojet",
+  url: "engines.html#turbojet",
+  content: `Turbojets leiten nahezu die gesamte angesaugte Luft durch die Brennkammer. Sie erzeugen hohen Schub bei hohen Geschwindigkeiten, sind jedoch ineffizient und verbrauchen viel Treibstoff. Heute werden sie fast nur noch militärisch eingesetzt.`
+},
+{
+  title: "Engines – Turbofan",
+  url: "engines.html#turbofan",
+  content: `Turbofans leiten einen Teil der Luft am Kerntriebwerk vorbei. Low-Bypass-Turbofans werden in Kampfjets verwendet, High-Bypass-Turbofans in Verkehrsflugzeugen. Sie sind deutlich effizienter als Turbojets, jedoch langsamer.`
+},
+{
+  title: "Engines – Turboprop",
+  url: "engines.html#turboprop",
+  content: `Turboprops nutzen eine Turbine, um einen Propeller anzutreiben. Sie sind extrem effizient bei niedrigen Geschwindigkeiten, jedoch ungeeignet für Kampfjets. Moderne Turboprops unterscheiden sich grundlegend von Kolbenmotor-Propellern des Zweiten Weltkriegs.`
+},
+{
+  title: "Engines – Variable Cycle Engines",
+  url: "engines.html#engine",
+  content: `Variable Cycle Engines kombinieren Turbojet- und Turbofan-Prinzipien und besitzen oft einen dritten, umschaltbaren Luftkanal. Dadurch können sie zwischen effizientem Reiseflug und maximaler Leistung wechseln. Nachteile sind Gewicht und technische Komplexität.`
+},
+{
+  title: "Engines – Beispiele",
+  url: "engines.html#example",
+  content: `Zukünftige Kampfjets wie die F-35 und F-47 sollen mit Variable Cycle Engines ausgerüstet werden. Beispiele für solche Triebwerke sind die US-Modelle XA-100 bis XA-103. Sie bieten zusätzlich höhere Kühlleistung und Stromerzeugung für KI, Sensoren und Laserwaffen.`
 }
+
 
 
 
