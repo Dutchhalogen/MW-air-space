@@ -9,6 +9,21 @@ function searchSite(query) {
     return;
   }
 
+  document.addEventListener("DOMContentLoaded", () => {
+    if (typeof searchData === "undefined") {
+      console.error("searchData fehlt!");
+      return;
+    }
+  
+    const resultsContainer = document.getElementById("search-results");
+    if (!resultsContainer) {
+      console.error("#search-results nicht gefunden");
+      return;
+    }
+  
+    // restlicher Suchcode
+  });
+
   const snippetLength = 30; // Zeichen vor/nach dem Suchwort
   let totalResults = 0;
 
